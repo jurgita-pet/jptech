@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Homepage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/cc90275952.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="d-flex justify-content-center py-3 bg-dark sticky-top">
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a href="index.html" class="nav-link"><i
+                        class="fa-solid fa-house"></i> Home</a></li>
+            <li class="nav-item"><a href="flowers2.html" class="nav-link">Flowers 2</a></li>
+            <li class="nav-item"><a href="flowers3.html" class="nav-link active" aria-current="page">Flowers 3</a></li>
+            <li class="nav-item"><a href="flowers4.html" class="nav-link">Flowers 4</a></li>
+            <li class="nav-item"><a href="flowers5.html" class="nav-link">Flowers 5</a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="container">
+            <h1 class="text-center p-5">Flowers 3</h1>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-7 text-center">
+                    <img src="images/flower3.jpg" class="rounded" alt="it is flower 1">
+                </div>
+                <div class="col-sm-5">
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam magnam,
+                        consequatur
+                        distinctio possimus autem illum expedita. Illo necessitatibus sit a est, dolor, commodi nesciunt
+                        praesentium expedita asperiores neque id non?
+                    </p>
+                    <div>
+                        <button class="btn btn-default btn-sm btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#firstModal"><i class="fa-solid fa-circle-info"></i> Read more
+                            info</button>
+                        <div class="modal" id="firstModal" role="dialog" tabindex="-1">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">The additional information is below</h5>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit nisi
+                                            repudiandae, quae
+                                            praesentium asperiores velit ea reprehenderit facere earum in?</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
