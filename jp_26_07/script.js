@@ -22,7 +22,7 @@ else {
 
 //Task 2
 
-let firstname = prompt("Enter you first name: ");
-let lastname = prompt("Enter your last name: ");
+let firstName = prompt("Enter you first name: ");
+let lastName = prompt("Enter your last name: ");
 
-alert("Hello " + firstname + " " + lastname);
+alert("Hello " + firstName + " " + lastName);
