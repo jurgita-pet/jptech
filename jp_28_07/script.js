@@ -2,10 +2,9 @@ let value1 = prompt("Enter your first value: ");
 let value2 = prompt("Enter your second value: ");
 let operation = prompt("Enter one of the following: +, -, *, /");
 
-value1 = parseInt(value1);
-value2 = parseInt(value2);
-
 if (!isNaN(value1) && !isNaN(value2)) {
+    value1 = parseFloat(value1);
+    value2 = parseFloat(value2);
     if (operation == "+") {
         result1 = value1 + value2;
         alert("The result of addition is " + result1);
