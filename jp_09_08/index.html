@@ -19,11 +19,11 @@
         <label>Enter two numbers you want to calculate:</label>
         <input type="number" id="value1">
         <input type="number" id="value2">
-        <div>
-            <button class="btn btn-secondary" onclick="addition()">+</button>
-            <button class="btn btn-secondary" onclick="substraction()">-</button>
-            <button class="btn btn-secondary" onclick="multiplication()">*</button>
-            <button class="btn btn-secondary" onclick="division()">/</button>
+        <div id="operations">
+            <button class="btn btn-secondary" onclick="operation('addition')">+</button>
+            <button class="btn btn-secondary" onclick="operation('substraction')">-</button>
+            <button class="btn btn-secondary" onclick="operation('multiplication')">*</button>
+            <button class="btn btn-secondary" onclick="operation('division')">/</button>
         </div>
         <h1 id="calculationResult"></h1>
     </div>
