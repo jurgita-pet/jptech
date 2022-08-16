@@ -18,56 +18,54 @@
 <body>
     <div class="container">
         <table id="table">
-            <tr>
-                <th>Colors</th>
-                <th>Flowers</th>
-            </tr>
-            <tr>
-                <td>
+            <thead>
+                <th>
                     <select id="colors" onchange="filterColor()">
-                        <option value=""></option>
+                        <option value="colors">Colors</option>
                         <option value="red">Red</option>
                         <option value="white">White</option>
                         <option value="yellow">Yellow</option>
                         <option value="pink">Pink</option>
                         <option value="green">Green</option>
                     </select>
-                </td>
-                <td>
+                </th>
+                <th>
                     <select id="flowers" onchange="filterFlower()">
-                        <option value=""></option>
+                        <option value="flowers">Flowers</option>
                         <option value="rose">Rose</option>
                         <option value="sunflower">Sunflower</option>
                         <option value="lily">Lily</option>
                         <option value="tulip">Tulip</option>
                         <option value="orchid">Orchid</option>
                     </select>
-                </td>
-            </tr>
-            <tr>
-                <td id="filteredColor"></td>
-                <td id="filteredFlower"></td>
-            </tr>
-            <tr>
-                <td class="color">Red</td>
-                <td class="flower">Rose</td>
-            </tr>
-            <tr>
-                <td class="color">White</td>
-                <td class="flower">Sunflower</td>
-            </tr>
-            <tr>
-                <td class="color">Yellow</td>
-                <td class="flower">Lily</td>
-            </tr>
-            <tr>
-                <td class="color">Pink</td>
-                <td class="flower">Tulip</td>
-            </tr>
-            <tr>
-                <td class="color">Green</td>
-                <td class="flower">Orchid</td>
-            </tr>
+                </th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="filteredColor"></td>
+                    <td id="filteredFlower"></td>
+                </tr>
+                <tr>
+                    <td class="color">Red</td>
+                    <td class="flower">Rose</td>
+                </tr>
+                <tr>
+                    <td class="color">White</td>
+                    <td class="flower">Sunflower</td>
+                </tr>
+                <tr>
+                    <td class="color">Yellow</td>
+                    <td class="flower">Lily</td>
+                </tr>
+                <tr>
+                    <td class="color">Pink</td>
+                    <td class="flower">Tulip</td>
+                </tr>
+                <tr>
+                    <td class="color">Green</td>
+                    <td class="flower">Orchid</td>
+                </tr>
+            </tbody>
         </table>
         <div>
             <label>Add new color</label>
