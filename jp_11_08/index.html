@@ -17,66 +17,50 @@
 
 <body>
     <div class="container">
-        <table id="table">
+        <table id="phoneTable">
             <thead>
-                <th>
-                    <select id="colors" onchange="filterColor()">
-                        <option value="colors">Colors</option>
-                        <option value="red">Red</option>
-                        <option value="white">White</option>
-                        <option value="yellow">Yellow</option>
-                        <option value="pink">Pink</option>
-                        <option value="green">Green</option>
-                    </select>
-                </th>
-                <th>
-                    <select id="flowers" onchange="filterFlower()">
-                        <option value="flowers">Flowers</option>
-                        <option value="rose">Rose</option>
-                        <option value="sunflower">Sunflower</option>
-                        <option value="lily">Lily</option>
-                        <option value="tulip">Tulip</option>
-                        <option value="orchid">Orchid</option>
-                    </select>
-                </th>
+                <tr>
+                    <th>Phone brand</th>
+                    <th>Color</th>
+                </tr>
+                <tr>
+                    <th>
+                        <select id="brandFilter" onchange="filter()">
+                            <option value=""></option>
+                            <option>iPhone</option>
+                            <option>Samsung</option>
+                        </select>
+                    </th>
+                    <th>
+                        <select id="colorFilter" onchange="filter()">
+                            <option value=""></option>
+                            <option>Red</option>
+                            <option>Black</option>
+                        </select>
+                    </th>
+                </tr>
             </thead>
-            <tbody>
+            <tbody id="tableRows">
                 <tr>
-                    <td id="filteredColor"></td>
-                    <td id="filteredFlower"></td>
+                    <td>iPhone</td>
+                    <td>Red</td>
                 </tr>
                 <tr>
-                    <td class="color">Red</td>
-                    <td class="flower">Rose</td>
+                    <td>iPhone</td>
+                    <td>Black</td>
                 </tr>
                 <tr>
-                    <td class="color">White</td>
-                    <td class="flower">Sunflower</td>
+                    <td>Samsung</td>
+                    <td>Red</td>
                 </tr>
                 <tr>
-                    <td class="color">Yellow</td>
-                    <td class="flower">Lily</td>
-                </tr>
-                <tr>
-                    <td class="color">Pink</td>
-                    <td class="flower">Tulip</td>
-                </tr>
-                <tr>
-                    <td class="color">Green</td>
-                    <td class="flower">Orchid</td>
+                    <td>Samsung</td>
+                    <td>Black</td>
                 </tr>
             </tbody>
         </table>
-        <div>
-            <label>Add new color</label>
-            <input type="text" id="newColor">
-            <button onclick="addNewElement()">Confirm</button>
-        </div>
-        <div>
-            <label>Add new flower</label>
-            <input type="text" id="newFlower">
-            <button onclick="addNewElement()">Confirm</button>
-        </div>
+        <input id="newBrand"><input id="newColor">
+        <button class="btn" onclick="addNewRow()">Add new row</button>
     </div>
 </body>
 
