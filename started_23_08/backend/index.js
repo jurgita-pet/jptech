@@ -38,16 +38,32 @@ app.post("/add-customer", (req, res) => {
         firstname: req.body.name,
         lastname: req.body.lastname,
         phone: req.body.phone,
-        email: req.body.email
+        email: req.body.email,
+        vip: req.body.vip == "Yes" ? 1 : 0
     };
 
-    // fs.readFile('AllCustomers.json', "utf8", (err, data) => {
-    //     const customers = JSON.parse(data);
-    //     customers.customers.push(newCustomer);
-    //     fs.writeFile('AllCustomers.json', JSON.stringify(customers, null, 3), function(err) {
-    //         res.send("Customer is added");
-    //     });
-    // })
+    const sqlQuery = "INSERT INTO customers (firstname,lastname,email,phone,vip) VALUES (?,?,?,?,?)";
+    connection.query(sqlQuery, [newCustomer.firstname, newCustomer.lastname,
+    newCustomer.email, newCustomer.phone, newCustomer.vip
+    ], (error, results) => {
+        if (error)
+            throw error;
+        res.send(JSON.stringify({
+            "status": 200,
+            "error": null,
+            "response": "Customer ID : " + results.insertId + " created!"
+        }))
+    })
+})
+
+app.post("/delete-customer", (req, res) => {
+    const id = req.body.deleteId;
+    const sqlQuery = `DELETE FROM customers WHERE id = ${id}`;
+    connection.query(sqlQuery, (error, results) => {
+        if (error)
+            throw error;
+        res.send(JSON.stringify({ "status": 200, "error": null, "response": { customers: results } }))
+    })
 })
 
 app.listen(5000, () => {
