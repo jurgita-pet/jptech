@@ -53,7 +53,18 @@ function result() {
 	let value = $("#answerLine").val();
 	let length = value.length;
 	let operation = value[length - 1];
-	if (operation == '+' || operation == '-' || operation == '*' || operation == '/') {
+	let inputIndex = value.slice(0, 1);
+	if (inputIndex == '+' || inputIndex == '-' || inputIndex == '*' || inputIndex == '/') {
+		if (inputIndex == '+') {
+			$("#answerLine").val(value);
+		} else if (inputIndex == '-') {
+			$("#answerLine").val(value);
+		} else if (inputIndex == '*' || inputIndex == '/') {
+			$("#answerLine").val(0);
+		} else {
+			$("#answerLine").val("ERROR");
+		}
+	} else if (operation == '+' || operation == '-' || operation == '*' || operation == '/') {
 		let newValue = parseFloat(value);
 		if (operation == '+') {
 			$("#answerLine").val(newValue + newValue);
