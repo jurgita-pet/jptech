@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+.list-group-item a {
+  text-decoration: none;
+  color: black;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.list-group-item-active {
+  background-color: blue;
+  border-radius: 0.4em;
+}
+
+.list-group-item-active a {
+  color: white;
+}
