@@ -1,0 +1,96 @@
+#wineRow {
+  min-height: 45vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-medium);
+}
+
+.winePhoto img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.wineInfo {
+  display: grid;
+  color: var(--clr-primary);
+}
+
+.wineTitle {
+  font-family: var(--ff-titles);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.wineTitle::first-letter {
+  font-size: 2rem;
+}
+
+.wineDesc,
+.winePrice {
+  font-family: var(--ff-text);
+  font-size: 1.3rem;
+}
+
+.winePrice {
+  font-weight: 700;
+}
+
+.updateWineIcons {
+  display: flex;
+  justify-content: flex-end;
+  max-height: 50px;
+}
+
+.editIcon {
+  cursor: pointer;
+  color: var(--btn-main);
+}
+
+.trashIcon {
+  cursor: pointer;
+  color: #E6BA95;
+  margin-left: 10px;
+}
+
+.updateTitle,
+.updateDescription,
+.updatePrice {
+  background-color: var(--bg-medium);
+  border: none;
+  text-align: center;
+}
+
+.updateTitle:focus,
+.updateDescription:focus,
+.updatePrice:focus {
+  outline: none;
+  background-color: var(--bg-light);
+  border-radius: 5px;
+}
+
+.updateChangesButton {
+  border: none;
+  background-color: var(--btn-main);
+  padding: 10px;
+  width: 100px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  border-radius: 5px;
+  margin-top: 10px;
+  color: var(--clr-secondary);
+  cursor: pointer;
+  margin: 10px auto;
+}
+
+.updateChangesButton:hover {
+  background-color: var(--btn-hover);
+  color: var(--clr-primary);
+}
+
+@media (max-width: 768px) {
+  #winerow {
+    margin-bottom: 20px;
+  }
+}

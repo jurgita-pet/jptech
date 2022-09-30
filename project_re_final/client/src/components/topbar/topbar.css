@@ -1,0 +1,35 @@
+  .topbar {
+    background-color: var(--bg-medium);
+    font-size: 1.2rem;
+  }
+
+  .navbar-brand {
+    width: 30%;
+    font-size: 2rem;
+  }
+
+  .navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+  }
+
+  .topMenuCategory {
+    margin: 0 20px;
+  }
+
+  .topMenuCategory:hover {
+    color: var(--clr-links-hover);
+  }
+
+  .icon {
+    font-size: 25px;
+    color: var(--clr-links);
+    margin-left: 15px;
+    cursor: pointer;
+  }
+
+  .icon:hover{
+    color: var(--clr-links-hover);
+  }

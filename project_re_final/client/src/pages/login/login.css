@@ -1,0 +1,60 @@
+.login {
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url("https://images.pexels.com/photos/733857/pexels-photo-733857.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.loginTitle {
+    font-size: 50px;     
+    color: var(--clr-links);     
+}
+
+.loginForm {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.loginForm > label {
+    margin: 10px 0; 
+    font-weight: 500;  
+}
+
+.loginForm > input {
+    padding: 10px;
+    background-color:var(--clr-gold);
+    border: none;
+    border-radius: 5px;    
+    min-width: 300px;
+}
+
+.loginForm input:focus {
+    outline: none;
+}
+
+.loginButton {
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: var(--btn-main);
+    border: none;
+    color: var(--clr-secondary);
+    border-radius: 5px;
+    padding: 10px;    
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.loginButton:hover {
+    background-color: var(--btn-hover);
+    color: var(--clr-primary);
+}
+
+.loginButton:disabled {
+    cursor: progress;
+}
+

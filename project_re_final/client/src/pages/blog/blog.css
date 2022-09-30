@@ -1,0 +1,10 @@
+body {
+    background-color: var(--bg-light);
+}
+
+.postsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+}

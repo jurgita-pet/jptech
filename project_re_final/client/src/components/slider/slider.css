@@ -1,0 +1,37 @@
+.sectionColor {
+    height: 85vh;
+    background-color: var(--bg-dark);
+}
+
+.carousel-inner {
+    height: 100%;
+    color: var(--bg-light);
+}
+
+.carousel-item {
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.carousel-caption {
+    width: 70%;
+    height: 100%;
+    bottom: 10%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    overflow: none;
+}
+
+.sliderImage {
+    opacity: 0.7;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.sliderImageMin {
+    display: none;
+}

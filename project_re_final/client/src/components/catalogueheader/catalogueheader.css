@@ -1,0 +1,23 @@
+.catheader {
+    min-height: 35vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.2), rgba(4, 9, 30, 0.4)), url(../../../public/images/catalogue_main_bg.jpg);
+    background-position: center;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.catheader h1 {
+    font-size: 3em;
+    border: 1px solid;
+    padding: 0.2em;
+    text-align: center;
+    color: var(--bg-light);
+    font-family: var(--ff-titles);
+    text-transform: uppercase;
+}

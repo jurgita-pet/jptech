@@ -1,0 +1,125 @@
+.settings {
+    width: 80%;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+.settingsUpdateTitle {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+}
+
+.settingsForm {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.settingsForm>label {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.settingsForm>input {
+    margin: 10px;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid #999;
+    border-radius: 5px;
+    width: 80%;
+    background-color: var(--bg-medium);
+    padding: 10px;
+}
+
+.settingsForm>input:focus {
+    outline: none;
+}
+
+.settingsFooter {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.settingsSubmit {
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+    color: var(--clr-secondary);
+    background-color: var(--btn-main);
+    padding: 10px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 700;
+    font-family: var(--ff-primary);
+}
+
+.settingsSubmit:hover {
+    background-color: var(--btn-hover);
+    color: var(--clr-primary);
+}
+
+.profileUpdated {
+    margin-top: 10px;
+    align-self: center;
+    color: var(--clr-links);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.settingsBack .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.backIcon {
+    margin-right: 8px;
+    color: var(--clr-links);
+}
+
+.settingsBack span {
+    color: var(--clr-links);
+    font-weight: 700;
+}
+
+.settingsBack span:hover {
+    color: var(--clr-links-hover);
+}
+
+.modalSuccess button,
+.modalFailure button {
+    width: 20%;
+    margin: 20px auto;
+}
+
+.modalFailure .modal-content {
+    background-color: rgb(213, 163, 163);
+}
+
+.modalSuccess .modal-body,
+.modalFailure .modal-body {
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .settings {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .settingsForm {
+        align-items: center;
+    }
+
+    .settingsUpdateTitle {
+        text-align: center;
+    }
+}
